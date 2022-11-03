@@ -17,7 +17,7 @@ class Converter:
 
     # whisper로 음성 파일 텍스트 추출
     def convert(self, audio_file):
-        text_original = self.__whisper_model.transcribe("audio-ko.mp3")['text']
+        text_original = self.__whisper_model.transcribe(audio_file)['text']
         return text_original
 
     #kobart로 텍스트 파일 요약
@@ -50,7 +50,7 @@ class Converter:
 
 converter = Converter()
 
-original = converter.convert("audio-ko.mp3")
+original = converter.convert("sample/audio-en.mp3")
 summary = converter.get_summary(original)
 
 print(original, summary)
