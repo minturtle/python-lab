@@ -3,6 +3,8 @@ from transformers import PreTrainedTokenizerFast
 from tokenizers import SentencePieceBPETokenizer
 from transformers import BartForConditionalGeneration
 import torch
+import sys
+
 
 class Converter:
     __whisper_model = None
@@ -43,8 +45,11 @@ class Converter:
         tokenizer = PreTrainedTokenizerFast.from_pretrained('gogamza/kobart-summarization')
         return tokenizer
 
-
     def __get_kobart_model(self):
         model = BartForConditionalGeneration.from_pretrained('gogamza/kobart-summarization')
         model.eval()
         return model
+
+if __name__ == "__main__":
+    converter = Converter()
+    print(converter.convert(sys.argv[1]))
