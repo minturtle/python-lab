@@ -1,14 +1,7 @@
-FROM ubuntu:latest
-LABEL maintainer="roseline124 <guseod24@gmail.com>"
+FROM openjdk:11
 
-ENV LANG=C.UTF-8
-ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update && \
   apt install -y --no-install-recommends tzdata g++ curl
-
-# install java
-RUN apt-get install openjdk-11-jre
-ENV JAVA_HOME="/usr/lib/jvm/java-1.8-openjdk"
 
 # install python
 RUN apt install -y python3-pip python3-dev
@@ -21,4 +14,4 @@ RUN cd /usr/local/bin && \
 RUN apt clean && \
   rm -rf /var/lib/apt/lists/*
 
-CMD["/bin/bash"]
+CMD ["/bin/bash"]
