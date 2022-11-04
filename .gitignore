@@ -1,3 +1,5 @@
-.cache
+backend/.cache
 .gitignore
-sample
+backend/sample
+uploads
+./backend/uploads

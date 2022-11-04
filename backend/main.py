@@ -1,11 +1,11 @@
 from flask import Flask, request, make_response, jsonify
 from werkzeug.utils import secure_filename
-from convert_to_text import Converter
+from backend.convert_to_text import Converter
 from flask_cors import CORS
 
 import os
 
-UPLOAD_FOLDER = 'uploads/audio/convert/'
+UPLOAD_FOLDER = 'backend/uploads/audio/convert/'
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
