@@ -19,8 +19,10 @@ class Converter:
 
     # whisper로 음성 파일 텍스트 추출
     def convert(self, audio_file):
-        text_original = self.__whisper_model.transcribe(audio_file)['text']
-        return text_original
+        result = self.__whisper_model.transcribe(audio_file)
+        text_original = result['text']
+        language = result['language']
+        return {"text" : text_original, "lang" : language}
 
     #kobart로 텍스트 파일 요약
     def get_summary(self, text_original):
@@ -44,6 +46,7 @@ class Converter:
     def __get_tokenizer(self):
         tokenizer = PreTrainedTokenizerFast.from_pretrained('gogamza/kobart-summarization')
         return tokenizer
+
 
     def __get_kobart_model(self):
         model = BartForConditionalGeneration.from_pretrained('gogamza/kobart-summarization')
