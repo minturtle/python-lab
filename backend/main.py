@@ -38,5 +38,5 @@ def upload_audio():
 
 
 if __name__ == '__main__':
-    app.run(port=8881, debug=True)
+    app.run(port=8881, debug=True, threaded=True)
     os.makedirs(UPLOAD_FOLDER, exist_ok=True)
