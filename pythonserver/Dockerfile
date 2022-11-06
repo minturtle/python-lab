@@ -12,6 +12,8 @@ COPY ./requirements.txt ./
 RUN pip install -r requirements.txt
 RUN pip install git+https://github.com/openai/whisper.git
 RUN pip install git+https://github.com/SKT-AI/KoBART#egg=kobart
-RUN apt install update
-RUN apt install ffmpeg
+RUN apt update
+RUN apt install -y ffmpeg
+
+EXPOSE 8000
 CMD ["/bin/bash"]
