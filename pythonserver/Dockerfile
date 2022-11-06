@@ -16,4 +16,4 @@ RUN apt update
 RUN apt install -y ffmpeg
 
 EXPOSE 8000
-CMD ["/bin/bash"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "stock.wsgi:application"]
