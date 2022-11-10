@@ -10,8 +10,9 @@ COPY manage.py ./
 COPY ./requirements.txt ./
 
 RUN apt update
-RUN apt -y upgrade python3
-RUN apt -y install python3-pip
+RUN apt install software-properties-common
+RUN add-apt-repository ppa:deadsnakes/ppa
+RUN apt install python3.9
 RUN pip install --upgrade pip
 RUN apt install -y ffmpeg
 RUN apt install -y git
