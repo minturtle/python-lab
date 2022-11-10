@@ -15,7 +15,7 @@ function AudioConvert() {
         const form = new FormData();
         form.append('file', file)
 
-        axios.post('http://localhost:8881/upload/audio', form, {
+        axios.post('http://localhost:8000/convert/audio/upload', form, {
             headers: {
               'Content-Type': 'multipart/form-data'
             }}).then(res=>{

@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-jl871!v!p6_(z_vq$c&186m7cga@4i#5yyoo=#by%ylz#e&yba
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [u"49.50.160.76", u"nextrend.kr", u"localhost"]
 
 
 # Application definition
@@ -123,5 +123,3 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-ALLOWED_HOSTS = [u"49.50.160.76", u"nextrend.kr", u"localhost"]

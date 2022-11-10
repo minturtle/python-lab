@@ -2,4 +2,6 @@ backend/.cache
 .gitignore
 backend/sample
 uploads
-./backend/uploads
+backend/uploads
+frontend/node_modules
+.idea
