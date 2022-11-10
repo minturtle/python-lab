@@ -9,10 +9,12 @@ COPY ./db.sqlite3 ./
 COPY manage.py ./
 COPY ./requirements.txt ./
 
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt update
 RUN apt install -y software-properties-common
 RUN add-apt-repository ppa:deadsnakes/ppa
-RUN apt install -y python3.9
+RUN DEBIAN_FRONTEND=noninteractive apt install -y python3.9
 RUN pip install --upgrade pip
 RUN apt install -y ffmpeg
 RUN apt install -y git
