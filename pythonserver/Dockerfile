@@ -10,9 +10,9 @@ COPY manage.py ./
 COPY ./requirements.txt ./
 
 RUN apt update
-RUN apt install software-properties-common
+RUN apt install -y software-properties-common
 RUN add-apt-repository ppa:deadsnakes/ppa
-RUN apt install python3.9
+RUN apt install -y python3.9
 RUN pip install --upgrade pip
 RUN apt install -y ffmpeg
 RUN apt install -y git
