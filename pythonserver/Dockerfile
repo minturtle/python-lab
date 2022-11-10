@@ -17,6 +17,7 @@ RUN add-apt-repository ppa:deadsnakes/ppa
 RUN DEBIAN_FRONTEND=noninteractive apt install -y python3.9
 RUN apt -y install python3-pip
 RUN pip install --upgrade pip
+RUN python --version
 RUN apt install -y ffmpeg
 RUN apt install -y git
 RUN pip install -r requirements.txt
