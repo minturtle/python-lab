@@ -12,9 +12,8 @@ COPY ./requirements.txt ./
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt update
-RUN apt install -y software-properties-common
-RUN add-apt-repository ppa:deadsnakes/ppa
-RUN DEBIAN_FRONTEND=noninteractive apt install -y python3.9
+RUN apt install python3.8 -y
+RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 1
 RUN apt -y install python3-pip
 RUN pip install --upgrade pip
 RUN python --version
