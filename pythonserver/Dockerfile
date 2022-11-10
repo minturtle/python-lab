@@ -15,6 +15,7 @@ RUN apt update
 RUN apt install -y software-properties-common
 RUN add-apt-repository ppa:deadsnakes/ppa
 RUN DEBIAN_FRONTEND=noninteractive apt install -y python3.9
+RUN apt -y install python3-pip
 RUN pip install --upgrade pip
 RUN apt install -y ffmpeg
 RUN apt install -y git
