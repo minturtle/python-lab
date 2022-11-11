@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.1-devel-ubuntu18.04
+FROM pure/python:3.8-cuda10.1-cudnn7-runtime
 
 WORKDIR /usr/app/src
 
@@ -11,14 +11,12 @@ COPY ./requirements.txt ./
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt update
-RUN apt install python3.8 -y
-RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8
-RUN apt -y install python3-pip
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
+RUN apt-get update
+RUN apt-get -y install python3-pip
 RUN pip install --upgrade pip
-RUN python --version
-RUN apt install -y ffmpeg
-RUN apt install -y git
+RUN apt-get install -y ffmpeg
+RUN apt-get install -y git
 RUN pip install -r requirements.txt
 RUN pip install git+https://github.com/SKT-AI/KoBART#egg=kobart
 RUN pip install git+https://github.com/openai/whisper.git
