@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
+FROM nvidia/cuda:10.1-devel-ubuntu18.04
 
 WORKDIR /usr/app/src
 
@@ -13,7 +13,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt update
 RUN apt install python3.8 -y
-RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 1
+RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8
 RUN apt -y install python3-pip
 RUN pip install --upgrade pip
 RUN python --version
