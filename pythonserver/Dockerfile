@@ -10,8 +10,10 @@ COPY manage.py ./
 COPY ./requirements.txt ./
 
 ENV DEBIAN_FRONTEND noninteractive
+ENV APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=1
 
-RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
+
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80  --recv-keys A4B469963BF863CC
 RUN apt-get update
 RUN apt-get -y install python3-pip
 RUN pip install --upgrade pip
