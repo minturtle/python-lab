@@ -60,5 +60,5 @@ RUN pip install -r requirements.txt
 RUN pip install git+https://github.com/SKT-AI/KoBART#egg=kobart
 RUN pip install git+https://github.com/openai/whisper.git
 
-EXPOSE 8000
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "pythonserver.wsgi:application"]
+EXPOSE 6533
+CMD ["gunicorn", "--bind", "0.0.0.0:6533", "pythonserver.wsgi:application"]
