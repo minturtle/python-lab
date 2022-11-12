@@ -56,7 +56,7 @@ RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
 RUN apt-get install -y ffmpeg
 RUN pip install -r requirements.txt
 RUN pip install git+https://github.com/SKT-AI/KoBART#egg=kobart
-RUN pip install git+https://github.com/openai/whisper.git
+RUN pip install git+https://github.com/minturtle/whisper
 
 EXPOSE 6533
 CMD ["gunicorn", "--bind", "0.0.0.0:6533", "pythonserver.wsgi:application"]
