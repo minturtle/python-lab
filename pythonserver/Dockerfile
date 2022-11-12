@@ -51,6 +51,7 @@ RUN apt-get update && apt-get install -y --allow-downgrades --allow-change-held-
 RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
     python get-pip.py && \
     rm get-pip.py \
+
 RUN apt-get install -y ubuntu-drivers-common
 RUN apt-get install -y ffmpeg
 RUN pip install -r requirements.txt
