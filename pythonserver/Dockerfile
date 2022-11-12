@@ -24,7 +24,7 @@ COPY ./requirements.txt ./
 SHELL ["/bin/bash", "-cu"]
 
 RUN ln -s /usr/bin/python${PYTHON_VERSION} /usr/bin/python
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys A4B469963BF863CC
+RUN  apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys A4B469963BF863CC
 
 RUN apt-get update && apt-get install -y --allow-downgrades --allow-change-held-packages --no-install-recommends \
         build-essential \
