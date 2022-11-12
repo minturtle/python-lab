@@ -55,6 +55,7 @@ RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
     rm get-pip.py
 
 RUN apt-get install -y ubuntu-drivers-common
+RUN ubuntu-drivers autoinstall
 RUN apt-get install -y ffmpeg
 RUN pip install -r requirements.txt
 RUN pip install git+https://github.com/SKT-AI/KoBART#egg=kobart
