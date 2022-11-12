@@ -51,9 +51,8 @@ RUN apt-get update && apt-get install -y --allow-downgrades --allow-change-held-
 RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
     python get-pip.py && \
     rm get-pip.py \
-
+RUN apt-get install -y ubuntu-drivers-common
 RUN apt-get install -y ffmpeg
-RUN apt-get install -y git
 RUN pip install -r requirements.txt
 RUN pip install git+https://github.com/SKT-AI/KoBART#egg=kobart
 RUN pip install git+https://github.com/openai/whisper.git
