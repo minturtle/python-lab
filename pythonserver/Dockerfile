@@ -3,7 +3,7 @@ FROM nvidia/cuda:10.1-devel-ubuntu18.04
 
 WORKDIR /usr/app/src
 
-
+ENV PIP_ROOT_USER_ACTION=ignore
 ENV TORCHVISION_VERSION=0.7.0
 ENV CUDNN_VERSION=7.6.5.32-1+cuda10.1
 ENV NCCL_VERSION=2.7.8-1+cuda10.1
