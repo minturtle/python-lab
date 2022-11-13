@@ -11,7 +11,7 @@ ENV LC_ALL=de_DE.utf-8
 ENV LANG=de_DE.utf-8
 ENV PATH /opt/conda/bin:$PATH
 
-ARG python=3.9
+ARG python=3.8
 ENV PYTHON_VERSION=${python}
 
 COPY ./convert ./convert
