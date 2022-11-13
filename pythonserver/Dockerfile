@@ -21,8 +21,6 @@ COPY ./db.sqlite3 ./
 COPY manage.py ./
 COPY ./requirements.txt ./
 
-RUN mkdir -p ./pythonserver/logs/errlogs.log
-
 # Set default shell to /bin/bash
 SHELL ["/bin/bash", "-cu"]
 
@@ -62,4 +60,4 @@ RUN pip install git+https://github.com/SKT-AI/KoBART#egg=kobart
 RUN pip install git+https://github.com/minturtle/whisper
 
 EXPOSE 6533
-CMD ["gunicorn","--workers","4", "--timeout", "600", "--bind", "0.0.0.0:6533",  "--error-logfile", "./pythonserver/logs/errlog.log", "pythonserver.wsgi:application"]
+CMD ["gunicorn","--workers","4", "--timeout", "600", "--bind", "0.0.0.0:6533", "pythonserver.wsgi:application"]
