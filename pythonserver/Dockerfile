@@ -11,7 +11,7 @@ ENV LC_ALL=de_DE.utf-8
 ENV LANG=de_DE.utf-8
 ENV PATH /opt/conda/bin:$PATH
 
-ARG python=3.8
+ARG python=3.9
 ENV PYTHON_VERSION=${python}
 
 COPY ./convert ./convert
@@ -55,7 +55,7 @@ RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
 
 RUN apt-get install -y ffmpeg
 RUN pip install -r requirements.txt
-RUN pip install torch==1.7.1+cu101 torchvision==0.8.2+cu101 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+RUN pip install torch==1.10.1+cu102 torchvision==0.11.2+cu102 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu102/torch_stable.html
 RUN pip install git+https://github.com/SKT-AI/KoBART#egg=kobart
 RUN pip install git+https://github.com/minturtle/whisper
 
