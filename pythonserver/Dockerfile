@@ -20,9 +20,8 @@ COPY ./pythonserver ./pythonserver
 COPY ./db.sqlite3 ./
 COPY manage.py ./
 COPY ./requirements.txt ./
-COPY ./logs ./logs
 
-RUN mkdir -p ./logs/errlogs.log
+RUN mkdir -p ./pythonserver/logs/errlogs.log
 
 # Set default shell to /bin/bash
 SHELL ["/bin/bash", "-cu"]
