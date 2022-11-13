@@ -24,12 +24,6 @@ COPY ./requirements.txt ./
 # Set default shell to /bin/bash
 SHELL ["/bin/bash", "-cu"]
 
-# Install Dependencies of Miniconda
-RUN apt-get update --fix-missing && \
-    apt-get install -y wget bzip2 curl git && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
-
 RUN ln -s /usr/bin/python${PYTHON_VERSION} /usr/bin/python
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys A4B469963BF863CC
 
