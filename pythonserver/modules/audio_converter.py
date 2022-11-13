@@ -9,14 +9,16 @@ import sys
 
 class Converter:
     __whisper_model = None
-    __kobart_model = None
-    __tokenizer = None
+    #__kobart_model = None
+    #__tokenizer = None
 
     def __init__(self):
         self.__whisper_model = self.__get_whisper_model("base")
-        self.__tokenizer = self.__get_tokenizer()
-        self.__kobart_model = self.__get_kobart_model()
+    #    self.__tokenizer = self.__get_tokenizer()
+    #    self.__kobart_model = self.__get_kobart_model()
 
+    def __get_whisper_model(self, model_name):
+        return whisper.load_model(model_name)
 
     # whisper로 음성 파일 텍스트 추출
     def convert(self, audio_file):
@@ -26,7 +28,7 @@ class Converter:
         return {"text" : text_original, "lang" : language}
 
     #kobart로 텍스트 파일 요약
-    def get_summary(self, text_original):
+'''    def get_summary(self, text_original):
         model = self.__kobart_model
         tokenizer = self.__tokenizer
 
@@ -41,9 +43,6 @@ class Converter:
         summary = tokenizer.decode(summary_ids.squeeze().tolist(), skip_special_tokens=True)
         return summary
 
-    def __get_whisper_model(self, model_name):
-        return whisper.load_model(model_name)
-
     def __get_tokenizer(self):
         tokenizer = BartTokenizer.from_pretrained('gogamza/kobart-summarization')
         return tokenizer
@@ -52,7 +51,7 @@ class Converter:
         model = BartForConditionalGeneration.from_pretrained('gogamza/kobart-summarization')
         model.eval()
         return model
-
+'''
 if __name__ == "__main__":
     converter = Converter()
     print(converter.convert(sys.argv[1]))
