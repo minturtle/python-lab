@@ -5,13 +5,14 @@ from modules.audio_converter import Converter
 
 import json
 
+converter = Converter()
+
 def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")
 
 
 def fileUpload(request):
     try:
-        converter = Converter()
         if request.method == 'POST':
 
             file = request.FILES["file"]

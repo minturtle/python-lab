@@ -60,4 +60,4 @@ RUN pip install git+https://github.com/SKT-AI/KoBART#egg=kobart
 RUN pip install git+https://github.com/minturtle/whisper
 
 EXPOSE 6533
-CMD ["gunicorn", "--bind", "0.0.0.0:6533", "pythonserver.wsgi:application"]
+CMD ["gunicorn", "--bind","--workers=4","--timeout 600", "0.0.0.0:6533", "pythonserver.wsgi:application"]
