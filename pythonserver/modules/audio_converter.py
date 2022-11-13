@@ -1,5 +1,6 @@
 import whisper
 from transformers import PreTrainedTokenizerFast
+from transformers import BartTokenizer
 from tokenizers import SentencePieceBPETokenizer
 from transformers import BartForConditionalGeneration
 import torch
@@ -44,9 +45,8 @@ class Converter:
         return whisper.load_model(model_name)
 
     def __get_tokenizer(self):
-        tokenizer = PreTrainedTokenizerFast.from_pretrained('gogamza/kobart-summarization')
+        tokenizer = BartTokenizer.from_pretrained('gogamza/kobart-summarization')
         return tokenizer
-
 
     def __get_kobart_model(self):
         model = BartForConditionalGeneration.from_pretrained('gogamza/kobart-summarization')
