@@ -56,7 +56,7 @@ RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
 RUN apt-get install -y ffmpeg
 RUN pip install -r requirements.txt
 RUN pip install torch==1.10.1+cu102 torchvision==0.11.2+cu102 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu102/torch_stable.html
-RUN pip install git+https://github.com/SKT-AI/KoBART#egg=kobart
+RUN pip install git+https://github.com/minturtle/KoBART
 RUN pip install git+https://github.com/minturtle/whisper
 
 EXPOSE 6533
