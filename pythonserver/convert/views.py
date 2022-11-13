@@ -31,8 +31,7 @@ def fileUpload(request):
             text_original = convert_result['text']
             language = convert_result['lang']
 
-            #text_summary = converter.get_summary(text_original) if language == 'ko' else '한글만 요약이 가능합니다.'
-            text_summary = "kobart 오류로 미구현"
+            text_summary = converter.get_summary(text_original) if language == 'ko' else '한글만 요약이 가능합니다.'
             return HttpResponse(json.dumps({"original_text" : text_original, "summary_text" : text_summary}).encode('utf8'), content_type="application/json")
         return HttpResponse(json.dumps({"msg" : "invalid request method"}).encode('utf8'), content_type="application/json", status=400)
     except Exception as e:
