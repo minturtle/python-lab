@@ -17,5 +17,5 @@ from django.urls import include, path
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('convert/audio', include('convert.urls'))
+    path('convert/', include('convert.urls'))
 ]
