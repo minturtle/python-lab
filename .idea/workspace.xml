@@ -2,13 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f19961e-9b7e-423b-aaa3-d14b7d14ed20" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pythonserver/modules/kobart_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pythonserver/modules/audio_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonserver/modules/audio_converter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonserver/convert/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonserver/convert/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonserver/convert/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonserver/convert/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonserver/modules/audio_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonserver/modules/whisper_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonserver/pythonserver/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonserver/pythonserver/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonserver/pythonserver/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonserver/pythonserver/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
