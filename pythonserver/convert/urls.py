@@ -4,5 +4,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index),
-    path('/upload', views.fileUpload)
+    path('stt', views.uploadSpeachToText),
+    path('summarization', views.getSummaryFromText)
 ]

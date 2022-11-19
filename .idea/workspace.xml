@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="1da8e114-66fe-4b71-a048-5e365778617e" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/backend/web/build.gradle" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/backend/web/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
@@ -24,15 +25,33 @@
       <change beforePath="$PROJECT_DIR$/backend/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/audio_converter.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" />
+=======
+    <list default="true" id="4f19961e-9b7e-423b-aaa3-d14b7d14ed20" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pythonserver/modules/kobart_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonserver/convert/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonserver/convert/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonserver/convert/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonserver/convert/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonserver/modules/audio_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonserver/modules/whisper_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonserver/pythonserver/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonserver/pythonserver/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonserver/pythonserver/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonserver/pythonserver/urls.py" afterDir="false" />
+>>>>>>> 0a4b15e8bd106878bbf6c2196f5edfa383f32e26
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -40,10 +59,15 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+=======
+  <component name="ProjectId" id="2HOKl5gF29olEHt2iJO0CfakXSl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+>>>>>>> 0a4b15e8bd106878bbf6c2196f5edfa383f32e26
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
@@ -55,6 +79,13 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
+=======
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+>>>>>>> 0a4b15e8bd106878bbf6c2196f5edfa383f32e26
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="python-lab" />
@@ -81,19 +112,20 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1da8e114-66fe-4b71-a048-5e365778617e" name="Changes" comment="" />
-      <created>1667709601716</created>
+      <changelist id="4f19961e-9b7e-423b-aaa3-d14b7d14ed20" name="Changes" comment="" />
+      <created>1668150838195</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1667709601716</updated>
       <workItem from="1667813027072" duration="40000" />
       <workItem from="1667889347904" duration="6000" />
       <workItem from="1668493834157" duration="689000" />
+=======
+      <updated>1668150838195</updated>
+>>>>>>> 0a4b15e8bd106878bbf6c2196f5edfa383f32e26
     </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -105,6 +137,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
