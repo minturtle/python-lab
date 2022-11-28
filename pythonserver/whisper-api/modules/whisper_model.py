@@ -1,5 +1,4 @@
 import whisper
-import torch
 import sys
 
 
